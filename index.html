@@ -1,0 +1,259 @@
+<body
+  class="text-stone-800 bg-fixed bg-cover bg-center bg-no-repeat"
+  style="background-image: url('img/back.png');">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur-sm shadow-sm border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-tight">
+        <span class="text-pink-500">Oportunidades Desde Casa</span>
+      </h1>
+
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-stone-700">
+        <a href="#">Inicio</a>
+        <a href="#">Nuestros Cursos</a>
+        <a href="#">Testimonios</a>
+        <a href="#">Mi Cuenta</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+ <!-- HERO PARALLAX PREMIUM -->
+<section
+  class="relative h-screen bg-fixed bg-cover bg-center flex items-center justify-center"
+  >
+
+  <!-- Capa oscura suave -->
+  <div class="absolute inset-0 bg-black/20"></div>
+
+  <!-- Contenido -->
+  <div class="relative z-10 text-center max-w-4xl px-6">
+    <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight drop-shadow-lg">
+       Aprende repostería desde casa
+      <span class="block text-[#FFD6E7]">y empieza a vender desde hoy</span>
+    </h1>
+
+ <p class="mt-6 text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+  Más de 500 estudiantes ya están generando ingresos
+  con nuestros cursos prácticos.
+</p>  
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+
+<style>
+@keyframes ctaPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+.cta-animate {
+  animation: ctaPulse 1.8s infinite ease-in-out;
+}
+</style>
+
+
+      <button
+        onclick="document.getElementById('coursesContainer').scrollIntoView({behavior:'smooth'})"
+       class="cta-animate bg-[#D9B99B] hover:bg-[#CDA886] text-white px-10 py-4 rounded-2xl font-bold shadow-2xl text-lg">
+        QUIERO EMPEZAR HOY
+      </button>
+
+      <button
+        onclick="document.getElementById('summarySection').scrollIntoView({behavior:'smooth'})"
+        class="bg-white/20 backdrop-blur-sm border border-white/50 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-white/30">
+        VER TESTIMONIOS
+      </button>
+    </div>
+    <p class="mt-4 text-sm text-white font-semibold animate-pulse">
+  ⏳ Oferta válida solo por hoy - 50% OFF
+</p>
+<p class="text-2xl font-bold text-white mt-2 drop-shadow-lg">
+  ⏰ Termina en <div class="mt-6 md:mt-0 text-center">
+        <div id="heroCountdown" class="text-2xl font-bold text-white mt-2 drop-shadow-lg font-bold">
+          01:59:00
+        </div>
+</p>
+<div class="mt-8 flex flex-wrap justify-center gap-6 text-white text-sm font-medium">
+  <span>✔ Acceso inmediato</span>
+  <span>✔ Aprende a tu ritmo</span>
+  <span>✔ Soporte por WhatsApp</span>
+</div>
+
+  </div>
+
+  <!-- Indicador scroll -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-white animate-bounce text-3xl">
+    ↓
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-6 py-8">
+  <div class="bg-gradient-to-r from-pink-500 to-rose-400 text-white rounded-3xl p-8 shadow-xl">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <p class="text-sm uppercase tracking-widest">Oferta Especial</p>
+        <h2 class="text-4xl font-bold mt-2">2 cursos por solo $25.000 COP</h2>
+        <p class="mt-2 text-lg opacity-90">
+          Aprovecha hoy y llévate dos cursos por el precio de uno.
+        </p>
+      </div>
+
+      <button
+        onclick="document.getElementById('coursesContainer').scrollIntoView({behavior:'smooth'})"
+        class="bg-white text-pink-600 px-8 py-4 rounded-2xl font-bold shadow-lg">
+        APROVECHAR OFERTA
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-8">
+  <div class="bg-red-500 text-white rounded-3xl p-8 shadow-2xl">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      
+      <div>
+        <p class="text-sm uppercase font-bold tracking-wider">
+          ⚡ Oferta Relámpago
+        </p>
+
+        <h2 class="text-4xl font-bold mt-2">
+          50% OFF por tiempo limitado
+        </h2>
+
+        <p class="mt-2 text-lg">
+          Solo durante las próximas 2 horas
+        </p>
+      </div>
+
+      <div class="mt-6 md:mt-0 text-center">
+        <div id="offerCountdown" class="text-4xl font-bold">
+          02:00:00
+        </div>
+
+        <p class="mt-3 text-sm font-semibold animate-pulse">
+          🔥 17 personas están viendo esta oferta ahora
+        </p>
+
+        <p class="text-sm mt-2">
+          ⏳ Quedan solo 8 cupos disponibles
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- CURSOS -->
+  <section class="max-w-7xl mx-auto px-6 py-10">
+    <div class="bg-white/85 backdrop-blur-sm rounded-3xl p-8 shadow-lg">
+      <h3 class="text-4xl font-semibold mb-8 text-stone-700">
+        Cursos Destacados
+      </h3>
+
+      <div id="coursesContainer"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TESTIMONIOS -->
+
+  
+<section class="max-w-7xl mx-auto px-6 py-12">
+  
+  <h3 class="text-4xl font-semibold mb-8 text-stone-700 text-center">
+
+        <p class="text-center text-stone-500 mb-6">
+  Más de 500 estudiantes ya están emprendiendo
+</p>
+    Lo que dicen nuestros estudiantes
+
+  </h3>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div class="bg-white/90 rounded-3xl shadow-md p-6 border border-[#E8DED5]">
+      <p class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</p>
+      <p class="mt-4 text-stone-600">
+        “Excelente curso, en una semana ya estaba vendiendo mis primeras tortas por encargo. En 15 días vendí más de $300.000.”
+      </p>
+      <p class="mt-4 font-semibold text-pink-500">
+        María - Medellín
+      </p>
+    </div>
+
+    <div class="bg-white/90 rounded-3xl shadow-md p-6 border border-[#E8DED5]">
+      <p class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</p>
+      <p class="mt-4 text-stone-600">
+        “Muy fácil de entender, aprendí decoración con fondant desde cero.”
+      </p>
+      <p class="mt-4 font-semibold text-pink-500">
+        Laura - Bogotá
+      </p>
+    </div>
+
+    <div class="bg-white/90 rounded-3xl shadow-md p-6 border border-[#E8DED5]">
+      <p class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</p>
+      <p class="mt-4 text-stone-600">
+        “Recuperé mi inversión en menos de 15 días gracias al curso.”
+      </p>
+      <p class="mt-4 font-semibold text-pink-500">
+        Camila - Cali
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- RESUMEN -->
+  <section id="summarySection" class="max-w-7xl mx-auto px-6 pb-24">
+    <div class="bg-white/90 rounded-3xl border border-[#E8DED5] shadow-md p-8 backdrop-blur-sm">
+      <h3 class="text-3xl font-semibold mb-6">
+        Cursos Seleccionados
+      </h3>
+
+      <div id="summaryList" class="space-y-3 mb-6"></div>
+
+      <div class="flex justify-between items-center border-t pt-5">
+        <div>
+          <p class="text-2xl font-semibold">Total a pagar</p>
+          <p id="totalPrice"
+            class="text-3xl font-bold text-blue-600">$0</p>
+        </div>
+
+        <button onclick="goToWhatsApp()"
+          class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-semibold shadow">
+          IR A PAGAR
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARRITO FLOTANTE -->
+  <div id="floatingCart"
+    class="fixed bottom-0 left-0 right-0 bg-white/95 border-t shadow-2xl p-4 hidden z-50 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <div>
+        <p id="floatingItems" class="text-sm text-stone-600">0 cursos</p>
+        <p id="floatingTotal" class="font-bold text-lg">$0</p>
+      </div>
+
+      <button onclick="scrollToSummary()"
+        class="bg-green-500 text-white px-6 py-2 rounded-xl">
+        Ver carrito
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
