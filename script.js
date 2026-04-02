@@ -1,38 +1,65 @@
 const courses = [
   {
     id: 1,
-    title: "Tortas y Pasteles",
-    price: 50,
+    title: "Mini-Donas Gourmet",
+    price: 10000,
+    originalPrice: 20000,
     discount: "50% OFF",
     urgent: true,
-    type: "image",
-    src: "img/torta-pasteles.jpg"
+    type: "video",
+    src: "videos/mini-donas.mp4"
   },
   {
     id: 2,
-    title: "Decoración con Fondant",
-    price: 60,
+    title: "Donas Estilo New York",
+    price: 10000,
+    originalPrice: 20000,
+    discount: "50% OFF",
+    urgent: true,
     type: "video",
-    src: "videos/fondant.mp4"
+    src: "videos/CakeDonas.mp4"
   },
   {
     id: 3,
-    title: "Repostería para Negocios",
-    price: 45,
-    discount: "30% OFF",
-    urgent: true,
-    type: "image",
-    src: "img/reposteria-negocios.jpg"
+    title: "Flores de Marshmellow",
+    price: 17000,
+    originalPrice: 70000,
+    discount: "25% OFF",
+    urgent: false,
+    type: "video",
+    src: "videos/Flores-malvavisco.mp4"
   },
   {
     id: 4,
-    title: "Marketing para Emprendedores",
-    price: 55,
-    type: "image",
-    src: "img/marketing.jpg"
+    title: "Marshmellows Kawaii",
+    price: 10000,
+    originalPrice: 20000,
+    discount: "50% OFF",
+    urgent: true,
+    type: "video",
+    src: "videos/masmelos-kawaii.mp4"
+  },
+  {
+    id: 5,
+    title: "Chocolatería Artesanal Colombiana",
+    price: 10000,
+    originalPrice: 20000,
+    discount: "50% OFF",
+    urgent: true,
+    type: "video",
+    src: "videos/brigadeiros.mp4"
+  },
+  {
+    id: 6,
+    title: "Platos típicos Colombianos - Colombia con sabor a negocio",
+    price: 10000,
+    originalPrice: 20000,
+    discount: "50% OFF",
+    urgent: true,
+    type: "video",
+    src: "videos/Platos-Tipicos.mp4"
   }
 ];
-
 let cart = [];
 
 const container = document.getElementById("coursesContainer");
@@ -44,26 +71,42 @@ function renderCourses() {
   courses.forEach(course => {
     const isSelected = cart.some(c => c.id === course.id);
 
-    const media =
-      course.type === "video"
-        ? `
-          <video
-            class="w-full h-48 object-cover rounded-t-2xl"
-            autoplay
-            muted
-            loop
-            playsinline
-          >
-            <source src="${course.src}" type="video/mp4">
-          </video>
-        `
-        : `
-          <img
-            src="${course.src}"
-            class="w-full h-48 object-cover rounded-t-2xl"
-            alt="${course.title}"
-          >
-        `;
+  const media =
+  course.type === "video"
+    ? `
+      <video
+        class="w-full rounded-t-2xl block"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source src="${course.src}" type="video/mp4">
+      </video>
+    `
+    : `
+      <img
+        src="${course.src}"
+        class="w-full rounded-t-2xl block"
+        alt="${course.title}"
+      >
+    `;
+    const priceBlock = course.originalPrice
+      ? `
+        <div class="mt-2">
+          <p class="text-sm text-stone-400 line-through">
+            COP $${course.originalPrice.toLocaleString("es-CO")}
+          </p>
+          <p class="text-2xl font-bold text-pink-500">
+            COP $${course.price.toLocaleString("es-CO")}
+          </p>
+        </div>
+      `
+      : `
+        <p class="text-2xl font-bold text-pink-500 mt-2">
+          COP $${course.price.toLocaleString("es-CO")}
+        </p>
+      `;
 
     container.innerHTML += `
       <div class="
@@ -86,20 +129,19 @@ function renderCourses() {
             ${course.title}
           </h4>
 
-          <p class="text-2xl font-bold text-pink-500 mt-1">
-            COP $${course.price}.000
-          </p>
+          ${priceBlock}
 
-          <button
-            onclick="toggleCourse(${course.id})"
-            class="
-              w-full mt-4 py-3 rounded-xl font-semibold transition-all duration-300
-              ${isSelected
-                ? "bg-green-500 hover:bg-green-600 text-white"
-                : "bg-[#D9B99B] hover:bg-[#CDA886] text-white"}
-            ">
-            ${isSelected ? "Quitar" : "¡Lo Quiero!"}
-          </button>
+       <button
+  data-course-id="${course.id}"
+  onclick="toggleCourse(${course.id})"
+  class="
+    w-full mt-4 py-3 rounded-xl font-semibold transition-all duration-300
+    ${isSelected
+      ? "bg-green-500 hover:bg-green-600 text-white"
+      : "bg-[#D9B99B] hover:bg-[#CDA886] text-white"}
+  ">
+  ${isSelected ? "Agregado" : "¡Lo Quiero!"}
+</button>
 
           ${course.urgent ? `
             <p class="text-xs text-red-500 mt-2 font-semibold text-center animate-pulse">
@@ -122,14 +164,32 @@ function toggleCourse(id) {
     cart.push(course);
   }
 
-  renderCourses();
+  updateCourseButton(id);
   updateSummary();
+}
+
+function updateCourseButton(id) {
+  const button = document.querySelector(`[data-course-id="${id}"]`);
+
+  if (!button) return;
+
+  const isSelected = cart.some(c => c.id === id);
+
+  button.innerText = isSelected ? "Agregado" : "¡Lo Quiero!";
+
+  button.className = `
+    w-full mt-4 py-3 rounded-xl font-semibold transition-all duration-300
+    ${isSelected
+      ? "bg-green-500 hover:bg-green-600 text-white"
+      : "bg-[#D9B99B] hover:bg-[#CDA886] text-white"}
+  `;
 }
 
 function updateSummary() {
   summaryList.innerHTML = "";
 
   let total = 0;
+  let originalTotal = 0;
 
   if (cart.length === 0) {
     summaryList.innerHTML = `
@@ -141,17 +201,54 @@ function updateSummary() {
 
   cart.forEach(course => {
     total += course.price;
+    originalTotal += course.originalPrice || course.price;
+
+    const priceHtml = course.originalPrice
+      ? `
+        <div class="text-right">
+          <p class="text-sm text-stone-400 line-through">
+            COP $${course.originalPrice.toLocaleString("es-CO")}
+          </p>
+          <p class="font-semibold text-pink-500">
+            COP $${course.price.toLocaleString("es-CO")}
+          </p>
+        </div>
+      `
+      : `
+        <span class="font-semibold">
+          COP $${course.price.toLocaleString("es-CO")}
+        </span>
+      `;
 
     summaryList.innerHTML += `
-      <div class="flex justify-between border-b py-3">
+      <div class="flex justify-between border-b py-3 items-center">
         <span>${course.title}</span>
-        <span class="font-semibold">USD ${course.price}</span>
+        ${priceHtml}
       </div>
     `;
   });
 
-  document.getElementById("totalPrice").innerText = `USD ${total}`;
-  document.getElementById("floatingTotal").innerText = `USD ${total}`;
+  const savings = originalTotal - total;
+
+  document.getElementById("totalPrice").innerHTML = `
+    ${originalTotal > total
+      ? `<p class="text-lg text-stone-400 line-through">
+          COP $${originalTotal.toLocaleString("es-CO")}
+        </p>`
+      : ""}
+    <p class="text-3xl font-bold text-blue-600">
+      COP $${total.toLocaleString("es-CO")}
+    </p>
+    ${savings > 0
+      ? `<p class="text-sm text-green-600 font-semibold">
+          Ahorras COP $${savings.toLocaleString("es-CO")}
+        </p>`
+      : ""}
+  `;
+
+  document.getElementById("floatingTotal").innerText =
+    `COP $${total.toLocaleString("es-CO")}`;
+
   document.getElementById("floatingItems").innerText =
     `${cart.length} curso${cart.length !== 1 ? "s" : ""}`;
 
@@ -231,3 +328,27 @@ function updateCountdown() {
 
 setInterval(updateCountdown, 1000);
 updateCountdown();
+
+function scrollToOffers() {
+  document.getElementById("ofertas").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
+window.addEventListener("load", () => {
+  if (!sessionStorage.getItem("autoScrolled")) {
+    setTimeout(() => {
+      const offersSection = document.getElementById("ofertas");
+
+      if (offersSection) {
+        offersSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+        sessionStorage.setItem("autoScrolled", "true");
+      }
+    }, 3000);
+  }
+});
