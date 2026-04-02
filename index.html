@@ -5,20 +5,15 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- HEADER -->
-  <header class="bg-white/90 backdrop-blur-sm shadow-sm border-b border-stone-200">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold tracking-tight">
-        <span class="text-pink-500">Oportunidades Desde Casa</span>
-      </h1>
-
-      <nav class="hidden md:flex gap-8 text-sm font-medium text-stone-700">
-        <a href="#">Inicio</a>
-        <a href="#">Nuestros Cursos</a>
-        <a href="#">Testimonios</a>
-        <a href="#">Mi Cuenta</a>
-      </nav>
-    </div>
-  </header>
+<header class="bg-white/90 backdrop-blur-sm shadow-sm border-b border-stone-200">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-center items-center">
+    <h1 class="text-3xl font-bold tracking-tight text-center">
+      <span class="text-pink-500">
+        Oportunidades Desde Casa
+      </span>
+    </h1>
+  </div>
+</header>
 
   <!-- HERO -->
  <!-- HERO PARALLAX PREMIUM -->
@@ -59,27 +54,27 @@
 
 
       <button
-        onclick="document.getElementById('coursesContainer').scrollIntoView({behavior:'smooth'})"
-       class="cta-animate bg-[#D9B99B] hover:bg-[#CDA886] text-white px-10 py-4 rounded-2xl font-bold shadow-2xl text-lg">
-        QUIERO EMPEZAR HOY
-      </button>
+  onclick="scrollToOffers()"
+  class="cta-animate bg-pink-500 hover:bg-pink-600 text-white px-14 py-5 rounded-3xl font-extrabold shadow-2xl text-xl md:text-2xl tracking-wide transform hover:scale-105 transition-all duration-300">
+  ✨ VER CURSOS EN OFERTA
+</button>
 
       <button
-        onclick="document.getElementById('summarySection').scrollIntoView({behavior:'smooth'})"
-        class="bg-white/20 backdrop-blur-sm border border-white/50 text-white px-10 py-4 rounded-2xl font-semibold hover:bg-white/30">
-        VER TESTIMONIOS
-      </button>
+  onclick="document.getElementById('summarySection').scrollIntoView({behavior:'smooth'})"
+  class="bg-white/30 backdrop-blur-md border-2 border-white/60 text-white px-14 py-5 rounded-3xl font-bold text-xl md:text-2xl hover:bg-white/40 hover:scale-105 transition-all duration-300 shadow-xl">
+  💬 VER TESTIMONIOS
+</button>
     </div>
-    <p class="mt-4 text-sm text-white font-semibold animate-pulse">
+    <p class="mt-6 text-xl md:text-2xl text-white/90 max-w-3xl mx-auto animate-pulse">
   ⏳ Oferta válida solo por hoy - 50% OFF
 </p>
 <p class="text-2xl font-bold text-white mt-2 drop-shadow-lg">
   ⏰ Termina en <div class="mt-6 md:mt-0 text-center">
-        <div id="heroCountdown" class="text-2xl font-bold text-white mt-2 drop-shadow-lg font-bold">
+        <div id="heroCountdown" class="text-2xl font-bold text-white mt-2 drop-shadow-lg font-bold animate-pulse">
           01:59:00
         </div>
 </p>
-<div class="mt-8 flex flex-wrap justify-center gap-6 text-white text-sm font-medium">
+<div class="mt-6 text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
   <span>✔ Acceso inmediato</span>
   <span>✔ Aprende a tu ritmo</span>
   <span>✔ Soporte por WhatsApp</span>
@@ -94,14 +89,14 @@
 </section>
 
 
-<section class="max-w-7xl mx-auto px-6 py-8">
+<section id="ofertas"  class="max-w-7xl mx-auto px-6 py-8">
   <div class="bg-gradient-to-r from-pink-500 to-rose-400 text-white rounded-3xl p-8 shadow-xl">
+     
     <div class="flex flex-col md:flex-row justify-between items-center gap-6">
       <div>
-        <p class="text-sm uppercase tracking-widest">Oferta Especial</p>
-        <h2 class="text-4xl font-bold mt-2">2 cursos por solo $25.000 COP</h2>
+        <h2 class="text-4xl font-bold mt-2">3 cursos por solo $25.000 COP</h2>
         <p class="mt-2 text-lg opacity-90">
-          Aprovecha hoy y llévate dos cursos por el precio de uno.
+          Aprovecha hoy y llévate 3 cursos.
         </p>
       </div>
 
@@ -114,48 +109,13 @@
   </div>
 </section>
 
-<section class="max-w-7xl mx-auto px-6 py-8">
-  <div class="bg-red-500 text-white rounded-3xl p-8 shadow-2xl">
-    <div class="flex flex-col md:flex-row justify-between items-center">
-      
-      <div>
-        <p class="text-sm uppercase font-bold tracking-wider">
-          ⚡ Oferta Relámpago
-        </p>
-
-        <h2 class="text-4xl font-bold mt-2">
-          50% OFF por tiempo limitado
-        </h2>
-
-        <p class="mt-2 text-lg">
-          Solo durante las próximas 2 horas
-        </p>
-      </div>
-
-      <div class="mt-6 md:mt-0 text-center">
-        <div id="offerCountdown" class="text-4xl font-bold">
-          02:00:00
-        </div>
-
-        <p class="mt-3 text-sm font-semibold animate-pulse">
-          🔥 17 personas están viendo esta oferta ahora
-        </p>
-
-        <p class="text-sm mt-2">
-          ⏳ Quedan solo 8 cupos disponibles
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
   <!-- CURSOS -->
   <section class="max-w-7xl mx-auto px-6 py-10">
     <div class="bg-white/85 backdrop-blur-sm rounded-3xl p-8 shadow-lg">
       <h3 class="text-4xl font-semibold mb-8 text-stone-700">
-        Cursos Destacados
+        Cursos en Oferta - Selecciona 1 o más cursos
       </h3>
 
       <div id="coursesContainer"
@@ -219,7 +179,7 @@
   <section id="summarySection" class="max-w-7xl mx-auto px-6 pb-24">
     <div class="bg-white/90 rounded-3xl border border-[#E8DED5] shadow-md p-8 backdrop-blur-sm">
       <h3 class="text-3xl font-semibold mb-6">
-        Cursos Seleccionados
+        🛒  Carrito de Compras - Cursos que marcaste para comprar
       </h3>
 
       <div id="summaryList" class="space-y-3 mb-6"></div>
