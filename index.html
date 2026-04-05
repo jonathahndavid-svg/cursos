@@ -111,11 +111,23 @@
 
 
 
-  <!-- CURSOS -->
+<!---CURSOS NUEVOS-->
+
+<section id="premiumCourses" class="max-w-7xl mx-auto px-6 py-10">
+  <h3 class="text-3xl font-bold text-stone-700 mb-6 text-center">
+    Cursos Premium
+  </h3>
+
+  <div id="premiumContainer"
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  </div>
+</section>
+
+  <!-- CURSOS EN OFERTA-->
   <section class="max-w-7xl mx-auto px-6 py-10">
     <div class="bg-white/85 backdrop-blur-sm rounded-3xl p-8 shadow-lg">
       <h3 class="text-4xl font-semibold mb-8 text-stone-700">
-        Cursos en Oferta - Selecciona 1 o más cursos
+        Cursos en Oferta - Selecciona 3 cursos para la oferta 3x20.000COP
       </h3>
 
       <div id="coursesContainer"
@@ -144,7 +156,7 @@
     <div class="bg-white/90 rounded-3xl shadow-md p-6 border border-[#E8DED5]">
       <p class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</p>
       <p class="mt-4 text-stone-600">
-        “Excelente curso, en una semana ya estaba vendiendo mis primeras tortas por encargo. En 15 días vendí más de $300.000.”
+        “Excelente el curso de Flores de Marshmellow, en una semana ya estaba vendiendo mi primer bouquet. En 15 días vendí más de $300.000.”
       </p>
       <p class="mt-4 font-semibold text-pink-500">
         María - Medellín
@@ -154,20 +166,20 @@
     <div class="bg-white/90 rounded-3xl shadow-md p-6 border border-[#E8DED5]">
       <p class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</p>
       <p class="mt-4 text-stone-600">
-        “Muy fácil de entender, aprendí decoración con fondant desde cero.”
+        “Hice el curso de Marshmellows Kawaii y fue un éxito total. Empecé vendiendo para cumpleaños y detalles personalizados, y en pocos días ya tenía varios pedidos. Son hermosos, fáciles de hacer y se venden muchísimo.”
       </p>
       <p class="mt-4 font-semibold text-pink-500">
-        Laura - Bogotá
+        Camila - Bogotá
       </p>
     </div>
 
     <div class="bg-white/90 rounded-3xl shadow-md p-6 border border-[#E8DED5]">
       <p class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</p>
       <p class="mt-4 text-stone-600">
-        “Recuperé mi inversión en menos de 15 días gracias al curso.”
+        “Hice el curso de Platos Típicos y en la primera semana ya estaba vendiendo almuerzos en mi barrio. La explicación es súper clara y las recetas salen deliciosas. Lo mejor es que pude empezar con muy poca inversión.”
       </p>
       <p class="mt-4 font-semibold text-pink-500">
-        Camila - Cali
+        Laura - Cali
       </p>
     </div>
 
@@ -215,5 +227,36 @@
     </div>
   </div>
 
+<div id="courseModal" class="fixed inset-0 bg-black/60 hidden z-50 flex items-center justify-center p-4">
+  <div class="bg-white rounded-3xl shadow-2xl max-w-6xl w-full max-h-[100vh] overflow-y-auto relative">
+
+  <div class="flex justify-between items-center border-b border-stone-200 px-6 py-4">
+  <h3 class="text-lg font-semibold text-stone-700">
+    Detalle del curso
+  </h3>
+
+  <button
+    onclick="closeCourseModal()"
+    class="bg-stone-100 hover:bg-stone-200 px-4 py-2 rounded-xl font-semibold transition-all">
+    ✖ Cerrar
+  </button>
+</div>
+
+    <div id="modalContent" class="grid md:grid-cols-[1.1fr_0.9fr] gap-6 p-6"></div>
+
+    <div class="border-t p-6">
+      <h4 class="text-xl font-bold mb-4">
+        También te puede interesar
+      </h4>
+
+      <div id="relatedCourses"
+        class="flex gap-4 overflow-x-auto pb-2 animate-pulse">
+      </div>
+    </div>
+  </div>
+</div>
+
+
   <script src="script.js"></script>
+  
 </body>
