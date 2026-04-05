@@ -7,3 +7,68 @@ video {
 }
 
 
+#relatedCourses {
+  overflow: hidden;
+  width: 100%;
+}
+
+.related-track {
+  width: max-content;
+  animation: scrollLeft 25s linear infinite;
+}
+
+.related-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  flex-direction: row !important;
+  align-items: stretch;
+  gap: 16px;
+  width: max-content;
+  white-space: nowrap;
+  animation: infiniteScroll 20s linear infinite;
+}
+
+.carousel-card {
+  flex: 0 0 260px;
+  width: 260px;
+  min-width: 260px;
+  display: inline-block;
+  vertical-align: top;
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 16px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
