@@ -7,13 +7,29 @@ const courses = [
     discount: "50% OFF",
     urgent: true,
     type: "img",
-    src: "img/mini-donas.jpg",
-    description:"",
+    src: "img/minidonas.jpg",
+    description: `
+Aprende a preparar deliciosas Mini-Donas irresistibles con técnicas fáciles y profesionales para que puedas disfrutarlas en casa o convertirlas en un emprendimiento rentable.
+
+En este curso descubrirás paso a paso cómo hacer mini-donas usando máquina eléctrica, fritas o horneadas, para que elijas el método que mejor se adapte a tu cocina y presupuesto.<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+<li>✅ Aprende A Hacer Mini-Donas Con Recetas Irresistibles Para Maquina Eléctrica, Fritas O Horneadas. </li> 
+
+<li>✅ Aprende A Crear Coberturas De Chocolate Y Glaseados. </li> 
+
+<li>✅ Videos De Apoyo Y Recursos De Ayuda. </li> 
+
+<li>🎁 Bono 1:  Cómo Vender Mini-Donas Desde Casa. </li> 
+<li>🎁 Bono 2:  Los 7 Rellenos Irresistibles. </li> 
+</ul>
+`,
     testimonials: [
-  "Hice el curso y en menos de 15 días recuperé la inversión.",
-  "Las recetas son fáciles y mis clientes quedaron encantados.",
-  "Ya tengo pedidos fijos los fines de semana."
-],
+      "Laura Gómez: Recuperé la inversión en la primera semana vendiendo por encargos.",
+      "Camila Rojas: Las mini donas se volvieron mi producto más vendido en cumpleaños.",
+      "Diana Restrepo: Súper fácil de seguir y muy rentable."
+    ],
     promoEligible: true
   },
   {
@@ -25,12 +41,24 @@ const courses = [
     urgent: true,
     type: "img",
     src: "img/donas-overload.png",
-    description:"",
+    description: `
+Aprende a crear domas estilo New York grandes, rellenas, gourmet y perfectas para emprender desde casa.<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+<li>✅ Crea Impresionante Coberturas de Chocolate. </li> 
+
+<li>✅ Glaseados Colombianos Inolvidables Premium </li> 
+
+<li>✅ Rellenos Irresistibles. </li> 
+<li>🎁 Bono: Mas de 200 Donas Rellenas Fritas.</li> 
+</ul>
+`,
     testimonials: [
-  "Hice el curso y en menos de 15 días recuperé la inversión.",
-  "Las recetas son fáciles y mis clientes quedaron encantados.",
-  "Ya tengo pedidos fijos los fines de semana."
-],
+      "Paola Mejía: Empecé vendiendo a mis vecinos y ahora tengo pedidos diarios.",
+      "María Fernanda: Las recetas salen perfectas desde el primer intento.",
+      "Juliana López: Mis clientes creen que son de pastelería profesional."
+    ],
     promoEligible: true
   },
   {
@@ -42,65 +70,269 @@ const courses = [
     urgent: false,
     type: "video",
     src: "videos/Flores-malvavisco.mp4",
-    description:"",
+    description: `
+Este no es solo un curso para aprender a hacer flores de masmelo 🌸🍡… es una oportunidad real para emprender y generar ingresos 💸✨
+
+A diferencia de un curso presencial donde solo aprendes la técnica y todo termina ahí, aquí recibirás un modelo de negocio rentable e integral, pensado para que conviertas tu aprendizaje en ventas reales 😎<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+<li>✅ Guías y videos paso a paso de la técnica y mucho más </li> 
+
+<li>✅ Tabla de rentabilidad para que aprendas a administrar tus ganancias </li> 
+
+<li>✅ Una poderosa Guía con el Secreto para vender tu producto en redes Sociales y no ser escondida por el algoritmo. ¡Y sin pagar publicidad! 😲 </li> 
+</ul>
+`,
     testimonials: [
-  "Hice el curso y en menos de 15 días recuperé la inversión.",
-  "Las recetas son fáciles y mis clientes quedaron encantados.",
-  "Ya tengo pedidos fijos los fines de semana."
-],
+      "Valentina Ruiz: Vendí mis primeras flores en menos de 3 días.",
+      "Natalia Giraldo: Se ven hermosas y la gente paga muy bien por ellas.",
+      "Sofía Castaño: Ideal para regalos personalizados."
+    ],
     promoEligible: false
   },
   {
     id: 4,
     title: "Marshmellows Kawaii",
-    price: 10000,
-    originalPrice: 20000,
+    price: 12000,
+    originalPrice: 24000,
     discount: "50% OFF",
     urgent: true,
     type: "video",
     src: "videos/masmelos-kawaii.mp4",
-    description:"",
-  testimonials: [
-  "Hice el curso y en menos de 15 días recuperé la inversión.",
-  "Las recetas son fáciles y mis clientes quedaron encantados.",
-  "Ya tengo pedidos fijos los fines de semana."
-],
+    description: `
+Aprende a crear hermosos Marshmallow Kawaii en 2D y 3D desde cero 🎀✨ 
+Sin necesidad de experiencia previa, te enseñamos paso a paso cómo elaborar estas tiernas y adorables figuras que están enamorando a todos. 
+
+Ideal para emprender, vender por pedidos, decorar mesas de dulces o crear regalos únicos y personalizados 💖🍬 <br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+<li>✅ Técnicas Especiales Y Fáciles De Realizar. </li> 
+
+<li>✅ Palillos y Rellenos. </li> 
+
+<li>✅ Empaques Especiales. </li> 
+
+<li>✅ Plantillas E Ideas Para Cualquier Tipo De Eventos. </li> 
+
+<li>🎁 Bono 1: Tips Para Un Negocio Completo. </li> 
+
+<li>🎁 Bono 2: Como Vender Marshmallow En Redes Sociales. </li> 
+</ul>
+`,
+    testimonials: [
+      "Daniela Ríos: En la primera semana ya tenía pedidos para cumpleaños.",
+      "Andrea López: A los niños les encantan y se venden rapidísimo.",
+      "Karen Gómez: Mi producto más viral en redes."
+    ],
     promoEligible: true
   },
   {
     id: 5,
     title: "Chocolatería Artesanal Colombiana",
-    price: 10000,
-    originalPrice: 20000,
+    price: 12000,
+    originalPrice: 24000,
     discount: "50% OFF",
     urgent: true,
     type: "img",
-    src: "img/brigadeiros.jpg",
-    description:"",
+    src: "img/bombones.jpeg",
+    description: `
+Emprende con Chocolatería artesanal colombiana de manera fácil y práctica .<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+<li>✅ Bombones De Chocolate Con Rellenos Y Técnicas Profesionales. </li> 
+
+<li>✅ Brigadeiros Y Trufas</li> 
+
+<li>✅ Chocolatinas Artesanales Y Personalizadas. </li> 
+
+<li>✅ Videos De Apoyo E Ideas Creativas. </li> 
+
+<li>✅ Fresas Cubiertas En Chocolate. </li> 
+
+ 
+<li>🎁 Bono 1:  Postre De Chocolate En Vasito. </li> 
+
+<li>🎁 Bono 2:  Secretos Para Vender Chocolates En Redes Sociales. </li> 
+
+<li>🎁 Bono 3: Bebidas De Chocolate Gourmet. </li> 
+
+<li>🎁 Bono 4:  Postre De Chocolate Saludable. </li> 
+</ul>
+`,
     testimonials: [
-  "Hice el curso y en menos de 15 días recuperé la inversión.",
-  "Las recetas son fáciles y mis clientes quedaron encantados.",
-  "Ya tengo pedidos fijos los fines de semana."
-],
+      "Marcela Pérez: Los chocolates se venden súper bien en fechas especiales.",
+      "Luisa Fernández: Recuperé la inversión muy rápido.",
+      "Carolina Ramírez: Mis clientes aman la presentación."
+    ],
     promoEligible: true
   },
   {
     id: 6,
+    title: "Brigadeiros Y Trufas",
+    price: 8000,
+    originalPrice: 16000,
+    discount: "50% OFF",
+    urgent: true,
+    type: "img",
+    src: "img/brigadeiros.jpg",
+    description: `
+Aprende a preparar deliciosos brigadeiros y trufas con acabados premium, ideales para vender en cumpleaños, regalos, eventos y mesas dulces. Descubre recetas irresistibles, coberturas y presentaciones que enamoran a primera vista, perfectas para emprender desde casa y generar ingresos con un producto de alta rentabilidad .<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+  <li>🎁 Bono Especial: Secretos para vender chocolates en redes sociales y construir una marca inolvidable</li>
+
+</ul>
+`,
+    testimonials: [
+  "Valentina Ruiz: Vendí mi primera caja de brigadeiros en solo 2 días.",
+  "Natalia Giraldo: Los acabados premium hacen que la gente pague más sin dudar.",
+  "Laura Montoya: Empecé desde cero y ya tengo pedidos cada semana."
+],
+    promoEligible: true
+  },
+
+  {
+    id: 7,
     title: "Platos típicos Colombianos - Colombia con sabor a negocio",
     price: 10000,
     originalPrice: 20000,
     discount: "50% OFF",
     urgent: true,
     type: "img",
-    src: "img/platos-típicos.png",
-    description:"",
+    src: "img/platostipicos.jpeg",
+    description: `
+Aprende a preparar platos típicos colombianos para vender almuerzos, pedidos empresariales y eventos.<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+<li>✅ Guía Principal Colombia Con Sabor A Negocio (+100 Recetas De Platos Típicos De Cada Región Del País).</li> 
+
+<li>✅ Guía De Sopas Y Cremas Típicas</li> 
+
+<li>✅ Guía De Ensaladas</li> 
+
+<li>✅ Guía De Postres Y Dulces Típicos</li> 
+
+<li>✅ Guía De Manipulación De Alimentos</li> 
+
+<li>✅ Lista De Proveedores Mayoristas Por Ciudad</li> 
+
+<li>🎁 Bono 1: Inicia Tu Negocio De Comida Colombiana Desde Casa Y Aprende Como Manejar Los Precios De Manera Correcta. </li> 
+
+<li>🎁 Bono 2: Cómo Vender En Redes Sociales De Manera Orgánica. </li> 
+</ul>
+`,
     testimonials: [
-  "Hice el curso y en menos de 15 días recuperé la inversión.",
-  "Las recetas son fáciles y mis clientes quedaron encantados.",
-  "Ya tengo pedidos fijos los fines de semana."
+      "Laura Martínez: Recuperé la inversión en menos de 15 días.",
+      "Mónica Herrera: Ya tengo clientes fijos los fines de semana.",
+      "Sandra Vélez: Excelente para empezar negocio desde casa."
+    ],
+    promoEligible: true
+  },
+  {
+    id: 8,
+    title: "Galletas Estilo New York",
+    price: 7000,
+    originalPrice: 14000,
+    discount: "50% OFF",
+    urgent: true,
+    type: "img",
+    src: "img/GalletasNY.jpg",
+    description: `
+    Aprende a preparar las famosas Galletas Estilo New York, gruesas, suaves por dentro y crocantes por fuera, con ese acabado premium que está conquistando redes sociales y cafeterías.
+
+En este curso descubrirás la receta paso a paso para lograr galletas grandes, irresistibles y con rellenos deliciosos como chocolate, Nutella, arequipe y frutos secos.
+
+Ideal para quienes desean emprender desde casa, vender por encargo o sorprender con un producto de alta demanda y excelente margen de ganancia..<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+ <li>✅ Aprende Y Emprende Con Las Galletas Estilo New York Más Virales Y Deliciosas, Todo Desde 0 Y Sin Experiencia. </li>
+  <li>🎁 Bono 1: Bono de 100 recetas de galletas para emprender</li>
+ <li>🎁 Bono 2: Cómo vender en redes sociales de manera orgánica</li>
+</ul>
+`,
+    testimonials: [
+  "Daniela Gómez: Las vendí en mi oficina y me hicieron pedido para toda la semana.",
+  "Mariana López: Quedan enormes, suaves por dentro y con un sabor espectacular.",
+  "Paula Restrepo: Empecé desde cero y ya estoy recibiendo pedidos por Instagram."
+],
+    promoEligible: true
+  },
+{
+    id: 9,
+    title: "Bolsos en Trapillo",
+    price: 10000,
+    originalPrice: 20000,
+    discount: "50% OFF",
+    urgent: true,
+    type: "img",
+    src: "img/bolsostrapillo.jpg",
+    description: `
+Aprende a crear hermosos bolsos en trapillo desde cero y sin experiencia, con videos paso a paso, guías prácticas y patrones exclusivos. Descubre técnicas fáciles para lograr diseños modernos y profesionales, ideales para uso personal o para emprender y generar ingresos desde casa. Además, incluye tips de tejido y un bono especial de redes sociales para ayudarte a vender más y hacer crecer tu negocio.<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+<li>✅ Aprende A Crear Bolsos En Trapillo Desde Cero Y Sin Experiencia. </li> 
+
+<li>✅ Videos De Apoyo Y Guías + Patrones.</li> 
+
+<li>✅ Tips Para Tejer..</li> 
+<li>🎁 Bono Especial: Redes Sociales Para Tu Negocio. </li> 
+</ul>
+`,
+ testimonials: [
+  "Juliana Herrera: Hice mi primer bolso en 2 días y ya me están haciendo pedidos.",
+  "Karen Bedoya: Los patrones son súper fáciles de seguir, incluso sin experiencia.",
+  "Melissa Ospina: Gracias al bono de redes sociales empecé a vender desde Instagram."
+],
+    promoEligible: true
+  },
+  {
+    id: 10,
+    title: "Mantequillas Corporales",
+    price: 10000,
+    originalPrice: 20000,
+    discount: "50% OFF",
+    urgent: true,
+    type: "img",
+    src: "img/mantequillas.jpg",
+    description: `
+Aprende a crear mantequillas corporales artesanales y convierte tu creatividad en un negocio rentable desde casa 🧴✨
+
+Descubre paso a paso cómo elaborar mantequillas corporales hidratantes, suaves y con aromas irresistibles, ideales para el cuidado de la piel y perfectas para vender como un producto natural y de alta demanda.<br><br>
+
+<strong>Incluye:</strong>
+<ul class="mt-2 space-y-1">
+  <li>✅ Emprende desde Casa con Mantequillas Corporales Artesanales. </li>
+  <li>✅ Guía Práctica de creación de Exfoliantes Naturales y Artesanales. </li>
+  <li>🎁 Bono 1: Mini Guía para Vender en Redes
+Sociales</li>
+<li>🎁 Bono 2: Plantilla de Cálculo de Costos y
+Rentabilidad</li>
+<li>🎁 Bono 3: Lista de Proveedores en
+Colombia
+</li>
+<li>🎁 Bono 4: 50 Ideas de Nombres para tu Marca de Cosmética
+Artesanal</li>
+<li>🎁 Bono 5: Cómo Tomar Fotos
+Profesionales con el Celular</li>
+<li>🎁 Bono 6: 10 Estrategias para Conseguir
+tus Primeros 50 Clientes</li>
+</ul>
+`,
+    testimonials: [
+  "Andrea Salazar: Mis primeras mantequillas se vendieron entre amigas en menos de una semana.",
+  "Lorena Martínez: La textura quedó profesional y el aroma encantó a mis clientes.",
+  "Paula Vélez: Empecé desde casa y ya estoy creando mi propia marca artesanal."
 ],
     promoEligible: true
   }
+  
 ];
 let cart = [];
 
@@ -115,13 +347,13 @@ function renderCourses() {
   premiumContainer.innerHTML = "";
 
   courses.forEach(course => {
-  const isPromoEligible = course.promoEligible === true;
+    const isPromoEligible = course.promoEligible === true;
 
-  const target = isPromoEligible
-    ? promoContainer
-    : premiumContainer;
+    const target = isPromoEligible
+      ? promoContainer
+      : premiumContainer;
 
-  const isSelected = cart.some(c => c.id === course.id);
+    const isSelected = cart.some(c => c.id === course.id);
 
     const media =
       course.type === "video"
@@ -152,8 +384,8 @@ function renderCourses() {
     relative rounded-2xl overflow-hidden transition-all duration-300
     cursor-pointer hover:shadow-xl hover:-translate-y-1
     ${isSelected
-      ? "bg-green-50 border-2 border-green-500 shadow-lg shadow-green-100"
-      : "bg-white border border-[#E8DED5] shadow-sm"}
+        ? "bg-green-50 border-2 border-green-500 shadow-lg shadow-green-100"
+        : "bg-white border border-[#E8DED5] shadow-sm"}
   "
 >
 
@@ -176,6 +408,13 @@ function renderCourses() {
             ${course.title}
           </h4>
 
+            <div class="mb-6">
+  ${course.originalPrice ? `
+    <p class="text-lg text-stone-400 line-through mb-1">
+      COP $${course.originalPrice.toLocaleString("es-CO")}
+    </p>
+  ` : ""}
+
           <p class="text-2xl font-bold text-pink-500 mt-2">
             COP $${course.price.toLocaleString("es-CO")}
           </p>
@@ -186,8 +425,8 @@ function renderCourses() {
   class="
     w-full mt-4 py-3 rounded-xl font-semibold transition-all duration-300
     ${isSelected
-      ? "bg-green-500 hover:bg-green-600 text-white"
-      : "bg-[#D9B99B] hover:bg-[#CDA886] text-white"}
+        ? "bg-green-500 hover:bg-green-600 text-white"
+        : "bg-[#D9B99B] hover:bg-[#CDA886] text-white"}
   "
 >
   ${isSelected ? "Quitar" : "¡Lo Quiero!"}
@@ -308,10 +547,10 @@ function updateSummary() {
             ${isPromo ? " - ✔ Incluido en promo" : ""}
           </p>
           ${course.promoEligible === false
-            ? `<p class="text-xs text-purple-500">
+        ? `<p class="text-xs text-purple-500">
                 No aplica promo
               </p>`
-            : ""}
+        : ""}
         </div>
       </div>
     `;
@@ -401,12 +640,12 @@ function goToWhatsApp() {
   });
 
   if (promoApplied) {
-    message += `%0A🎉 Promo aplicada: 3 cursos por COP $20.000`;
+    message += `%0A🎉 Promo aplicada: 3 cursos por COP $25.000`;
   }
 
   message += `%0A%0ATotal: COP $${total.toLocaleString("es-CO")}`;
 
-  const phone = "573045818262";
+  const phone = "573122357008";
 
   const url = `https://wa.me/${phone}?text=${message}`;
 
@@ -510,9 +749,14 @@ function openCourseModal(courseId) {
     <div>
       ${media}
     </div>
+<div>
+  ${course.promoEligible === false ? `
+    <span class="inline-block mb-3 bg-purple-500 text-white text-xs px-3 py-1 rounded-full font-bold shadow">
+      ⭐ Premium
+    </span>
+  ` : ""}
 
-    <div>
-      <h2 class="text-3xl font-bold mb-4">${course.title}</h2>
+  <h2 class="text-3xl font-bold mb-4">${course.title}</h2>
 
       <p class="text-stone-600 mb-6">
         ${course.description || "Curso diseñado para emprender desde casa y generar ingresos rápidamente."}
@@ -525,9 +769,9 @@ ${course.testimonials?.length ? `
         <div class="text-yellow-400 text-lg mb-1">
           ★★★★★
         </div>
-        <p class="text-sm text-stone-600 italic">
-          “${testimonial}”
-        </p>
+        <p class="text-lg md:text-xl text-stone-600 italic leading-relaxed">
+  “${testimonial}”
+</p>
       </div>
     `).join("")}
   </div>
@@ -566,7 +810,17 @@ ${course.testimonials?.length ? `
 
   renderRelatedCourses(courseId);
 
-  document.getElementById("courseModal").classList.remove("hidden");
+  const modal = document.getElementById("courseModal");
+  modal.classList.remove("hidden");
+
+  // SUBIR SCROLL AL INICIO
+  const modalBox = modal.querySelector(".modal-content-box");
+  if (modalBox) {
+    modalBox.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
 }
 
 function closeCourseModal() {
@@ -576,29 +830,62 @@ function closeCourseModal() {
 function renderRelatedCourses(currentId) {
   const related = courses.filter(c => c.id !== currentId);
 
-  // duplicamos para efecto infinito
-  const loopCourses = [...related, ...related];
-
   document.getElementById("relatedCourses").innerHTML = `
-    <div class="related-track flex gap-4">
-      ${loopCourses.map(course => `
-        <div
-          onclick="openCourseModal(${course.id})"
-          class="relative min-w-[240px] bg-stone-50 rounded-2xl p-4 shadow cursor-pointer hover:shadow-lg transition-all"
-        >
-          ${course.discount ? `
-            <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-bold shadow z-10">
-              🔥 ${course.discount}
-            </span>
-          ` : ""}
+    <div class="flex gap-4 overflow-x-auto pb-2">
+      ${related.map(course => {
+    const media = course.type === "video"
+      ? `
+            <video
+              class="w-full h-32 object-cover rounded-t-2xl"
+              autoplay
+              muted
+              loop
+              playsinline
+              controlsList="nodownload noplaybackrate"
+              disablePictureInPicture
+            >
+              <source src="${course.src}" type="video/mp4">
+            </video>
+          `
+      : `
+            <img
+              src="${course.src}"
+              class="w-full h-32 object-cover rounded-t-2xl"
+              alt="${course.title}"
+            >
+          `;
 
-          <p class="font-bold pr-16">${course.title}</p>
+    return `
+          <div
+            onclick="openCourseModal(${course.id})"
+            class="relative min-w-[220px] max-w-[220px] bg-white rounded-2xl shadow cursor-pointer overflow-hidden flex-shrink-0"
+          >
+            ${course.discount ? `
+              <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-bold shadow z-10">
+                🔥 ${course.discount}
+              </span>
+            ` : ""}
 
-          <p class="text-pink-500 mt-2 font-semibold">
-            COP $${course.price.toLocaleString("es-CO")}
-          </p>
-        </div>
-      `).join("")}
+            ${course.promoEligible === false ? `
+              <span class="absolute top-2 left-2 bg-purple-500 text-white text-xs px-3 py-1 rounded-full font-bold shadow z-10">
+                ⭐ Premium
+              </span>
+            ` : ""}
+
+            ${media}
+
+            <div class="p-3">
+              <p class="font-bold text-sm leading-tight">
+                ${course.title}
+              </p>
+
+              <p class="text-pink-500 mt-2 font-semibold">
+                COP $${course.price.toLocaleString("es-CO")}
+              </p>
+            </div>
+          </div>
+        `;
+  }).join("")}
     </div>
   `;
 }
